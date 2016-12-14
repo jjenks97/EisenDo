@@ -5,12 +5,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>EisenDo</title>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <link href="style.css" rel="stylesheet">
         
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        
+        <link href="style.css" rel="stylesheet">
         
 
     </head>
@@ -18,27 +21,49 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 inputTasks">
                     <input type = 'text' id = "toDo" />
-                    <input type='button' value = 'add to list' id= 'add'>
+                    <input type='button' value = 'Add Task' id= 'add'>
                 </div>
+                <div class="col-md-3"></div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <h1>Tasks</h1>
-                </div>
-            </div>
-            <div class="row">
+                <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <ul id='sortable1' class="connectedSortable">
-                        <li class="ui-state-default">Item 1</li>
-                        <li class="ui-state-default">Item 2</li>
+                    <h1 class="taskHeader">Tasks</h1>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <ul id='sortable1' class="connectedSortable list1">
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <ul id='sortable2' class='connectedSortable'>
-                        <li class="ui-state-default">12381</li>
-                        <li class="ui-state-default">12381</li>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 importantUrgent">
+                    <h1 class="iUHeader">Important/Urgent</h1>
+                    <ul id='sortable2' class='connectedSortable list2'>
+                    </ul>
+                </div>
+                <div class="col-md-6 importantNotUrgent">
+                    <h1 class="iNUHeader">Important/Not Urgent</h1>
+                    <ul id='sortable3' class='connectedSortable list3'>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 unimportantUrgent">
+                    <h1 class ="uUHeader">Unimportant/Urgent</h1>
+                    <ul id='sortable4' class='connectedSortable list4'>
+                    </ul>
+                </div>
+                <div class="col-md-6 unimportantNotUrgent">
+                    <h1 class="uNUHeader">Unimportant/Not Urgent</h1>
+                    <ul id='sortable5' class='connectedSortable list5'>
                     </ul>
                 </div>
             </div>
@@ -57,7 +82,6 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
